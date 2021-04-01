@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link type="text/css" rel="stylesheet" href="css/paystyle.css">
     <title>Payment Form</title>
 </head>
@@ -85,13 +86,14 @@
             </p>
         </section>
         <p><button id="btn" type="submit">Validate the payment</button></p>
-        <!-- The Modal -->
-        <div id="myModal" class="modal-screen">
-            <!-- Modal content -->
-            <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Thank you for your payment, </p>
+        <!-- Modal HTML embedded directly into document -->
+        <div id="ex1" class="modal">
+            <p>Thanks for clicking. That felt good.</p>
+            <a href="#" rel="modal:close">Close</a>
         </div>
+        
+        <!-- Link to open the modal -->
+        <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
     </form>
 
     <!-- JQuery link and Js link-->
